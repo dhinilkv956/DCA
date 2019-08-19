@@ -7,4 +7,5 @@ This guide is intended to be a point of knowledge for everyone who wants to pass
     b. [Installation docker on ubuntu](https://github.com/dhinilkv956/DCA/blob/master/Core_Docker_Concepts/Installation_docker_on_ubuntu.md)     
     c. [Running a container](https://github.com/dhinilkv956/DCA/blob/master/Core_Docker_Concepts/Running_a_Container.md)   
     d. [Upgrading docker engine](https://github.com/dhinilkv956/DCA/blob/master/Core_Docker_Concepts/Upgrading%26downgrading_docker_engine.md)    
-    e. 
+    e. [Configuring Logging Drivers](https://github.com/dhinilkv956/DCA/blob/master/Core_Docker_Concepts/Configuring_Logging_Drivers.md)   
+    d. 
