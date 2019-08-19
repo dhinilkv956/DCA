@@ -126,6 +126,30 @@ VOLUME (Shared Filesystems)
 USER
 WORKDIR
 
+<pre class="highlight"><code>$ docker inspect -f "{{ .RestartCount }}" my-container
+# 2
+</code></pre>
+</div>
+</div>
+<p>Or, to get the last time the container was (re)started;</p>
+<div class="highlighter-rouge">
+<div class="highlight">
+<pre class="highlight"><code>$ docker inspect -f "{{ .State.StartedAt }}" my-container
+# 2015-03-04T23:47:07.691840179Z</code><br /><br /><br /></pre>
+<h2 id="exit-status">Exit Status</h2>
+<p>The exit code from&nbsp;<code class="highlighter-rouge">docker run</code>&nbsp;gives information about why the container failed to run or why it exited. When&nbsp;<code class="highlighter-rouge">docker run</code>exits with a non-zero code, the exit codes follow the&nbsp;<code class="highlighter-rouge">chroot</code>&nbsp;standard, see below:</p>
+<p><strong><em>125</em></strong>&nbsp;if the error is with Docker daemon&nbsp;<strong><em>itself</em></strong></p>
+<div class="highlighter-rouge">
+<div class="highlight">
+<pre class="highlight"><code>$ docker run --foo busybox; echo $?
+# flag provided but not defined: --foo
+  See 'docker run --help'.
+  125</code></pre>
+</div>
+</div>
+</div>
+</div>
+
 
 
 
@@ -229,26 +253,3 @@ WORKDIR
 </tr>
 </tbody>
 </table>
-<pre class="highlight"><code>$ docker inspect -f "{{ .RestartCount }}" my-container
-# 2
-</code></pre>
-</div>
-</div>
-<p>Or, to get the last time the container was (re)started;</p>
-<div class="highlighter-rouge">
-<div class="highlight">
-<pre class="highlight"><code>$ docker inspect -f "{{ .State.StartedAt }}" my-container
-# 2015-03-04T23:47:07.691840179Z</code><br /><br /><br /></pre>
-<h2 id="exit-status">Exit Status</h2>
-<p>The exit code from&nbsp;<code class="highlighter-rouge">docker run</code>&nbsp;gives information about why the container failed to run or why it exited. When&nbsp;<code class="highlighter-rouge">docker run</code>exits with a non-zero code, the exit codes follow the&nbsp;<code class="highlighter-rouge">chroot</code>&nbsp;standard, see below:</p>
-<p><strong><em>125</em></strong>&nbsp;if the error is with Docker daemon&nbsp;<strong><em>itself</em></strong></p>
-<div class="highlighter-rouge">
-<div class="highlight">
-<pre class="highlight"><code>$ docker run --foo busybox; echo $?
-# flag provided but not defined: --foo
-  See 'docker run --help'.
-  125</code></pre>
-</div>
-</div>
-</div>
-</div>
