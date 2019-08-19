@@ -2,5 +2,5 @@ Docker Certified Associate Exam Preparation Guide (v1.0.1)
 This guide is intended to be a point of knowledge for everyone who wants to pass Docker Certified Associate Exam. The main idea is to provide the right answer/link to every "question" in every domain. Feel free to add useful links below.
 
 <b>Table of Contents:</b>  
-1.[Core Docker Concepts]  
+1. Core Docker Concepts  
     a. [Installation docker on centos](https://github.com/dhinilkv956/DCA/tree/master/Core_Docker_Concepts)  
