@@ -12,5 +12,9 @@ This guide is intended to be a point of knowledge for everyone who wants to pass
     e. [Configuring a Swarm Manager](https://github.com/dhinilkv956/DCA/blob/master/Core_Docker_Concepts/Configuring%20_a%20_Swarm_Manager.md)   
     f. [Configuring Swarm Nodes](https://github.com/dhinilkv956/DCA/blob/master/Core_Docker_Concepts/Configuring_Swarm_Nodes.md)  
     g. [Docker Swarm Backup and Restore](https://github.com/dhinilkv956/DCA/blob/master/Core_Docker_Concepts/Docker_Swarm_Backup_and_Restore.md)   
-    h. [Namespaces and Cgroups](https://github.com/dhinilkv956/DCA/blob/master/Core_Docker_Concepts/Namespaces_and_Cgroups.md)  
+    h. [Namespaces and Cgroups](https://github.com/dhinilkv956/DCA/blob/master/Core_Docker_Concepts/Namespaces_and_Cgroups.md)
+
+
+2. Image Creation, Management, and Registry
+    a. [Introduction to Docker Images](
    
