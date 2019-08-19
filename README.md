@@ -1,13 +1,13 @@
 Docker Certified Associate Exam Preparation Guide (v1.0.1)
 This guide is intended to be a point of knowledge for everyone who wants to pass Docker Certified Associate Exam. The main idea is to provide the right answer/link to every "question" in every domain. Feel free to add useful links below.
 
-More Github 
+More Github   
 [DCA1](https://github.com/Evalle/DCA/blob/master/README.md#domain-1-orchestration-25-of-exam)  
 [DCA2](https://github.com/kyledinh/docker/tree/master/dca)
 
 <b>Table of Contents:</b>  
 1. Core Docker Concepts (Docker Community Edition Installation and Configuration)  
-    a. [Installation docker on centos](https://github.com/dhinilkv956/DCA/blob/master/Core_Docker_Concepts/Installation_docker_on_centos.md)    
+    a. [Installation docker on centos](https://github.com/dhinilkv956/DCA/blob/master/Core_Docker_Concepts/Installation_docker_on_centos.md)  
     b. [Installation docker on ubuntu](https://github.com/dhinilkv956/DCA/blob/master/Core_Docker_Concepts/Installation_docker_on_ubuntu.md)     
     c. [Running a container](https://github.com/dhinilkv956/DCA/blob/master/Core_Docker_Concepts/Running_a_Container.md)   
     d. [Upgrading docker engine](https://github.com/dhinilkv956/DCA/blob/master/Core_Docker_Concepts/Upgrading%26downgrading_docker_engine.md)    
@@ -29,7 +29,7 @@ More Github
     g. [Using Docker Registries](https://github.com/dhinilkv956/DCA/blob/master/Image_Creation_Management_and_Registry/Using_Docker_Registries.md) 
 
 3. Orchestration  
-    a. [Locking and Unlocking a Swarm Cluster](https://github.com/dhinilkv956/DCA/blob/master/Orchestration/Locking_and_Unlocking_a_Swarm_Cluster.md) 
+    a. [Locking and Unlocking a Swarm Cluster](https://github.com/dhinilkv956/DCA/blob/master/Orchestration/Locking_and_Unlocking_a_Swarm_Cluster.md)  
     b. [ High Availability in a Swarm Cluster](https://github.com/dhinilkv956/DCA/blob/master/Orchestration/High_Availability_in_a_Swarm_Cluster.md)   
     c. [Introduction to Docker Services](https://github.com/dhinilkv956/DCA/blob/master/Orchestration/Introduction_to_Docker_Services.md)  
     e. [Using docker inspect](https://github.com/dhinilkv956/DCA/blob/master/Orchestration/Using_docker_inspect.md)  
