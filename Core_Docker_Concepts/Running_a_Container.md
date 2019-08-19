@@ -1,4 +1,12 @@
+<h2>&nbsp;Running a Container</h2>
+
 <p>Docker runs processes in isolated containers. A container is a process which runs on a host. The host may be local or remote. When an operator executes&nbsp;<code class="highlighter-rouge">docker run</code>, the container process that runs is isolated in that it has its own file system, its own networking, and its own isolated process tree separate from the host.</p>
+
+<h3 id="relevant-documentation">Relevant Documentation</h3>
+<ul>
+<li><a href="https://docs.docker.com/engine/reference/run/">https://docs.docker.com/engine/reference/run/</a></li>
+</ul>
+
 <p>&nbsp;</p>
 <p>The basic&nbsp;<code class="highlighter-rouge">docker run</code>&nbsp;command takes this form:</p>
 <div class="highlighter-rouge">
