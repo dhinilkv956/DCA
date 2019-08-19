@@ -4,10 +4,12 @@
 <p>Each Docker daemon has a default logging driver, which each container uses unless you configure it to use a different logging driver.</p>
 <p>In addition to using the logging drivers included with Docker, you can also implement and use&nbsp;<a href="https://docs.docker.com/engine/admin/logging/plugins/">logging driver plugins</a></p>
 
+Relevant Documentation
+https://docs.docker.com/config/containers/logging/configure/
 
 <b> LAB: </b>
 
-<p>heck the current default logging driver:</p>
+<p>check the current default logging driver:</p>
 <pre><code>docker info | grep Logging
 </code></pre>
 <p>Edit&nbsp;<code>daemon.json</code>&nbsp;to set a new default logging driver configuration:</p>
