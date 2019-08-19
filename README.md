@@ -15,7 +15,7 @@ This guide is intended to be a point of knowledge for everyone who wants to pass
     h. [Namespaces and Cgroups](https://github.com/dhinilkv956/DCA/blob/master/Core_Docker_Concepts/Namespaces_and_Cgroups.md)
 
 
-2. Image Creation, Management, and Registry
+2. Image Creation, Management, and Registry   
     a. [Introduction to Docker Images](https://github.com/dhinilkv956/DCA/blob/master/Image_Creation_Management_and_Registry/introduction_to_Docker_Images.md)     
     b. [The Components of a Dockerfile](https://github.com/dhinilkv956/DCA/blob/master/Image_Creation_Management_and_Registry/Components_of_Dockerfile.md)
    
