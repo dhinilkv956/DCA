@@ -28,9 +28,9 @@ More Github
     f. [Introduction to Docker Registries](https://github.com/dhinilkv956/DCA/blob/master/Image_Creation_Management_and_Registry/Introduction_to_Docker_Registries.md) 
     g. [Using Docker Registries](https://github.com/dhinilkv956/DCA/blob/master/Image_Creation_Management_and_Registry/Using_Docker_Registries.md) 
 
-3. Orchestration
+3. Orchestration  
     a. [Locking and Unlocking a Swarm Cluster](https://github.com/dhinilkv956/DCA/blob/master/Orchestration/Locking_and_Unlocking_a_Swarm_Cluster.md) 
-    b. [ High Availability in a Swarm Cluster](https://github.com/dhinilkv956/DCA/blob/master/Orchestration/High_Availability_in_a_Swarm_Cluster.md)  
+    b. [ High Availability in a Swarm Cluster](https://github.com/dhinilkv956/DCA/blob/master/Orchestration/High_Availability_in_a_Swarm_Cluster.md)   
     c. [Introduction to Docker Services](https://github.com/dhinilkv956/DCA/blob/master/Orchestration/Introduction_to_Docker_Services.md)  
     e. [Using docker inspect](https://github.com/dhinilkv956/DCA/blob/master/Orchestration/Using_docker_inspect.md)  
     f. [Docker Compose](https://github.com/dhinilkv956/DCA/blob/master/Orchestration/Docker_Compose.md)  
