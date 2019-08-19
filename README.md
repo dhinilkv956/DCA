@@ -34,7 +34,7 @@ More Github
     c. [Introduction to Docker Services](https://github.com/dhinilkv956/DCA/blob/master/Orchestration/Introduction_to_Docker_Services.md)  
     e. [Using docker inspect](https://github.com/dhinilkv956/DCA/blob/master/Orchestration/Using_docker_inspect.md)  
     f. [Docker Compose](https://github.com/dhinilkv956/DCA/blob/master/Orchestration/Docker_Compose.md)  
-    g. [Introduction to Docker Stacks](https://github.com/dhinilkv956/DCA/blob/master/Orchestration/Introduction_to_Docker_Stacks.md)
+    g. [Introduction to Docker Stacks](https://github.com/dhinilkv956/DCA/blob/master/Orchestration/Introduction_to_Docker_Stacks.md)  
     h. [Node Labels](https://github.com/dhinilkv956/DCA/blob/master/Orchestration/Node_Labels.md)
 
     
