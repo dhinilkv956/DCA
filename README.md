@@ -10,4 +10,5 @@ This guide is intended to be a point of knowledge for everyone who wants to pass
     e. [Configuring Logging Drivers](https://github.com/dhinilkv956/DCA/blob/master/Core_Docker_Concepts/Configuring_Logging_Drivers.md)   
     d. [Introduction to Docker Swarm](https://github.com/dhinilkv956/DCA/blob/master/Core_Docker_Concepts/Introduction_to_Docker_Swarm.md)    
     e. [Configuring a Swarm Manager](https://github.com/dhinilkv956/DCA/blob/master/Core_Docker_Concepts/Configuring%20_a%20_Swarm_Manager.md)   
-    f. [Configuring Swarm Nodes](https://github.com/dhinilkv956/DCA/blob/master/Core_Docker_Concepts/Configuring_Swarm_Nodes.md)
+    f. [Configuring Swarm Nodes](https://github.com/dhinilkv956/DCA/blob/master/Core_Docker_Concepts/Configuring_Swarm_Nodes.md)  
+    g. [Docker Swarm Backup and Restore](https://github.com/dhinilkv956/DCA/blob/master/Core_Docker_Concepts/Docker_Swarm_Backup_and_Restore.md)
