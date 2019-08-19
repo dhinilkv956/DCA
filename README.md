@@ -51,6 +51,8 @@ More Github
     d. [Deploying a Service on a Docker Overlay Network](https://github.com/dhinilkv956/DCA/blob/master/Networking/Deploying_a_Service_on_a_Docker_Overlay_Network.md)  
     e. [Exposing Containers Externally](https://github.com/dhinilkv956/DCA/blob/master/Networking/Exposing_Containers_Externally.md)  
     f. [Network Troubleshooting](https://github.com/dhinilkv956/DCA/blob/master/Networking/Network_Troubleshooting.md)  
+    g. [Configuring Docker to Use External DNS](https://github.com/dhinilkv956/DCA/blob/master/Networking/Configuring_Docker_to_Use_External_DNS.md)  
+    
     
     
    
