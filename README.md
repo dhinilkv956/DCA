@@ -25,7 +25,7 @@ More Github
     c. [Building Efficient Images](https://github.com/dhinilkv956/DCA/blob/master/Image_Creation_Management_and_Registry/Building_Efficient_Images.md)  
     d. [Managing Images](https://github.com/dhinilkv956/DCA/blob/master/Image_Creation_Management_and_Registry/Managing_Images.md)  
     e. [Flattening a Docker Image to a Single Layer](https://github.com/dhinilkv956/DCA/blob/master/Image_Creation_Management_and_Registry/Flattening_a_Docker_Image_to_a_Single_Layer.md)  
-    f. [Introduction to Docker Registries](https://github.com/dhinilkv956/DCA/blob/master/Image_Creation_Management_and_Registry/Introduction_to_Docker_Registries.md) 
+    f. [Introduction to Docker Registries](https://github.com/dhinilkv956/DCA/blob/master/Image_Creation_Management_and_Registry/Introduction_to_Docker_Registries.md)   
     g. [Using Docker Registries](https://github.com/dhinilkv956/DCA/blob/master/Image_Creation_Management_and_Registry/Using_Docker_Registries.md)  
     
     
