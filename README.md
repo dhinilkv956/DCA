@@ -3,4 +3,4 @@ This guide is intended to be a point of knowledge for everyone who wants to pass
 
 <b>Table of Contents:</b>  
 1. Core Docker Concepts  
-    a. [Installation docker on centos](https://github.com/dhinilkv956/DCA/tree/master/Core_Docker_Concepts)  
+    a. [Installation docker on centos](https://github.com/dhinilkv956/DCA/blob/master/Core_Docker_Concepts/Installation_docker_on_centos.md)  
