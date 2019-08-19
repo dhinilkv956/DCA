@@ -1,7 +1,7 @@
 Docker Certified Associate Exam Preparation Guide (v1.0.1)
 This guide is intended to be a point of knowledge for everyone who wants to pass Docker Certified Associate Exam. The main idea is to provide the right answer/link to every "question" in every domain. Feel free to add useful links below.
 
-[More Github DCA1](htps://github.com/Evalle/DCA/blob/master/README.md#domain-1-orchestration-25-of-exam)
+[More Github DCA1](https://github.com/Evalle/DCA/blob/master/README.md#domain-1-orchestration-25-of-exam)
 
 <b>Table of Contents:</b>  
 1. Core Docker Concepts (Docker Community Edition Installation and Configuration)  
