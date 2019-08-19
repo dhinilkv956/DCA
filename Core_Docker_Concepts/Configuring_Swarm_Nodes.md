@@ -1,3 +1,4 @@
+<h2>Configuring Swarm Nodes</h2>
 <p>Docker swarm worker nodes handle the processing of workloads in the swarm cluster. We have already set up a swarm manager, so in this lesson we will discuss the process of adding worker nodes to the swarm. We will demonstrate this by adding our two worker nodes to the cluster that was initialized in the previous lesson.</p>
 <h3 id="relevant-documentation">Relevant Documentation</h3>
 <ul>
