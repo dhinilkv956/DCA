@@ -1,35 +1,60 @@
 <h2>Building Efficient Images</h2>
-<div class="close-video-menu">
-<p>Executing containers is the core feature of Docker. In this lesson we will dive into the process of executing containers using&nbsp;<code>docker run</code>. We will demonstrate how to use this command, and learn some of the important options and flags that can be used with it. We will also discuss some additional commands that can allow us to manage containers on a host. After completing this lesson, we'll know how to run and manage containers with Docker.</p>
+<div class="close-video-menu">&nbsp;</div>
+<p>Dockerfiles allow us to build our own images containing any software we need. However, it is important to ensure that our Dockerfiles are built to produce small, efficient images that do not contain unnecessary data. In this lesson, we will briefly discuss some general tips for creating efficient images. We will also demonstrate how to use multi-stage builds to significantly decrease image size in certain situations.</p>
 <h3 id="relevant-documentation">Relevant Documentation</h3>
 <ul>
-<li><a href="https://docs.docker.com/engine/reference/run/">https://docs.docker.com/engine/reference/run/</a></li>
+<li><a href="https://docs.docker.com/develop/develop-images/dockerfile_best-practices/">https://docs.docker.com/develop/develop-images/dockerfile_best-practices/</a></li>
+<li><a href="https://docs.docker.com/develop/develop-images/multistage-build/">https://docs.docker.com/develop/develop-images/multistage-build/</a></li>
 </ul>
 <h3 id="lesson-reference">Lesson Reference</h3>
-<p>Run a simple container using the&nbsp;<code>hello-world</code>&nbsp;image:</p>
-<pre><code>docker run hello-world
+<p>Create some project directories:</p>
+<pre><code>cd ~/
+mkdir efficient
+mkdir inefficient
+cd inefficient
 </code></pre>
-<p>Run a container using a specific image tag:</p>
-<pre><code>docker run nginx:1.15.11
+<p>Create the source code file:</p>
+<pre><code>vi helloworld.go
 </code></pre>
-<p>Run a container with a command and arguments:</p>
-<pre><code>docker run busybox echo hello world!
+<pre><code>package main
+import "fmt"
+func main() {
+    fmt.Println("hello world")
+}
 </code></pre>
-<p>Run an Nginx container customized with a variety of flags:</p>
-<pre><code>docker run -d --name nginx --restart unless-stopped -p 8080:80 --memory 500M --memory-reservation 256M nginx
+<p>Create the Dockerfile:</p>
+<pre><code>vi Dockerfile
 </code></pre>
-<p>List any currently running containers:</p>
-<pre><code>docker ps
+<pre><code>FROM golang:1.12.4
+WORKDIR /helloworld
+COPY helloworld.go .
+RUN GOOS=linux go build -a -installsuffix cgo -o helloworld .
+CMD ["./helloworld"]
 </code></pre>
-<p>List all containers, both running and stopped:</p>
-<pre><code>docker ps -a
+<p>Build and test the&nbsp;<code>inefficient</code>&nbsp;image:</p>
+<pre><code>docker build -t inefficient .
+docker run inefficient
+docker image ls
 </code></pre>
-<p>Stop the Nginx container:</p>
-<pre><code>docker container stop nginx
+<p>Switch to the&nbsp;<code>efficient</code>&nbsp;project directory and copy the files from the&nbsp;<code>inefficient</code>&nbsp;project:</p>
+<pre><code>cd ~/efficient
+cp ../inefficient/helloworld.go ./
+cp ../inefficient/Dockerfile ./
 </code></pre>
-<p>Start a stopped container:</p>
-<pre><code>docker container start nginx
+<p>Change the Dockerfile to use a multi-stage build:</p>
+<pre><code>vi Dockerfile
 </code></pre>
-<p>Delete a container (but it must be stopped first):</p>
-<pre><code>docker container rm nginx</code></pre>
-</div>
+<pre><code>FROM golang:1.12.4 AS compiler
+WORKDIR /helloworld
+COPY helloworld.go .
+RUN GOOS=linux go build -a -installsuffix cgo -o helloworld .
+
+FROM alpine:3.9.3
+WORKDIR /root
+COPY --from=compiler /helloworld/helloworld .
+CMD ["./helloworld"]
+</code></pre>
+<p>Build and test the&nbsp;<code>efficient</code>&nbsp;image:</p>
+<pre><code>docker build -t efficient .
+docker run efficient
+docker image ls</code></pre>
