@@ -52,6 +52,42 @@ curl localhost:8080</code></pre>
 </div>
 </div>
 
+
+Edit your Dockerfile:
+
+cd ~/custom-nginx
+vi Dockerfile
+Add more customization to the Dockerfile:
+
+# Simple nginx image
+FROM ubuntu:bionic
+
+ENV NGINX_VERSION 1.14.0-0ubuntu1.2
+
+RUN apt-get update && apt-get install -y curl
+RUN apt-get update && apt-get install -y nginx=$NGINX_VERSION
+
+WORKDIR /var/www/html/
+ADD index.html ./
+
+EXPOSE 80
+
+CMD ["nginx", "-g", "daemon off;"]
+
+STOPSIGNAL SIGTERM
+HEALTHCHECK CMD curl localhost:80
+Rebuild the image ad test it:
+
+docker build -t custom-nginx .
+docker run -d -p 8080:80 custom-nginx
+curl localhost:8080
+Locate our running container with docker ps, then remove it to clean up the environment:
+
+docker ps
+docker container rm -f <container id>
+
+
+
 <h2 id="buildkit">BuildKit</h2>
 <p>Starting with version 18.09, Docker supports a new backend for executing your builds that is provided by the&nbsp;<a href="https://github.com/moby/buildkit">moby/buildkit</a>project. The BuildKit backend provides many benefits compared to the old implementation.&nbsp;</p>
 <ul>
