@@ -1,3 +1,5 @@
+<h2>Locking and Unlocking a Swarm Cluster</h2>
+<div class="close-video-menu">&nbsp;</div>
 <p>Docker supports the ability to securely store certain encryption keys. These encryption keys are used to encrypt sensitive cluster data, but are stored unencrypted on the disks of swarm managers by default. Autolock allows for greater security for these keys, but requires each manager to be unlocked whenever Docker restarts. In this lesson, we will discuss autolock. We will demonstrate how to enable and disable autolock, as well as how to use it when it is enabled.</p>
 <h3 id="relevant-documentation">Relevant Documentation</h3>
 <ul>
