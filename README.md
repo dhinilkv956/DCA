@@ -5,6 +5,9 @@ More Github
 [DCA1](https://github.com/Evalle/DCA/blob/master/README.md#domain-1-orchestration-25-of-exam)  
 [DCA2](https://github.com/kyledinh/docker/tree/master/dca)
 
+More EXAM guide.  
+[Guide1](https://www.linkedin.com/pulse/docker-certified-associate-how-pass-first-time-steven-owens/)
+
 <b>Table of Contents:</b>  
 1. Core Docker Concepts (Docker Community Edition Installation and Configuration)  
     a. [Installation docker on centos](https://github.com/dhinilkv956/DCA/blob/master/Core_Docker_Concepts/Installation_docker_on_centos.md)  
